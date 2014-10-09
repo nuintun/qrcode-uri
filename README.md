@@ -1,4 +1,4 @@
 QRCode-URI
 ==========
 
-A chrome extension that transform tab url to qrcode
+A chrome extension can transform tab url to qrcode
