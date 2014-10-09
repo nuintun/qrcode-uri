@@ -1,34 +1,43 @@
 <!doctype html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>二维码链接</title>
-	<style type="text/css">
-		html, body {
-			padding: 0;
-			margin: 0;
-		}
+	<head>
+		<meta charset="utf-8">
+		<title>二维码链接</title>
+		<style type="text/css">
+			html, body, div{
+				padding: 0;
+				margin: 0;
+			}
 
-		body {
-			font: normal 12px/1.5 MICROSOFT YAHEI, Arial, serif;
-			color: #333;
-			background-color: #fff;
-		}
+			body {
+				font: normal 12px/1.5 MICROSOFT YAHEI, Arial, serif;
+				color: #333;
+				background-color: #fff;
+			}
 
-		.qrcode {
-			font-size: 0;
-			line-height: 0;
-		}
-	</style>
-</head>
-<body>
-	<div id="qrcode" class="qrcode"></div>
-	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
-	<script type="text/javascript" src="js/qrbase.js"></script>
-	<script type="text/javascript" src="js/reedsolomon.js"></script>
-	<script type="text/javascript" src="js/encode.js"></script>
-	<script type="text/javascript" src="js/qrcode.js"></script>
-	<script type="text/javascript" src="js/render.canvas.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
-</body>
+			.qrcode {
+				-webkit-text-size-adjust: none;
+				font-size: 0;
+				line-height: 0;
+			}
+
+			.error {
+				display: none;
+				padding: 6px 10px;
+				color: #f00;
+				white-space: nowrap;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="qr-box" class="qrcode"></div>
+		<div id="error" class="error"></div>
+		<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+		<script type="text/javascript" src="js/qrbase.js"></script>
+		<script type="text/javascript" src="js/reedsolomon.js"></script>
+		<script type="text/javascript" src="js/encode.js"></script>
+		<script type="text/javascript" src="js/qrcode.js"></script>
+		<script type="text/javascript" src="js/render.canvas.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
 </html>
