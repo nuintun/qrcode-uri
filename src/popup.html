@@ -21,6 +21,10 @@
                 line-height: 0;
             }
 
+            .loading {
+                margin: 10px 17px;
+            }
+
             .error {
                 display: none;
                 padding: 6px 10px;
@@ -30,7 +34,9 @@
         </style>
     </head>
     <body>
-        <div id="qr-box" class="qrcode"></div>
+        <div id="qr-box" class="qrcode">
+            <img class="loading" src="images/loading.gif" alt="loading"/>
+        </div>
         <div id="error" class="error"></div>
         <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
         <script type="text/javascript" src="js/qrbase.js"></script>
